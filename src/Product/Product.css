@@ -1,0 +1,89 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Or space-between or space-around */
+  margin: 40px 40px 0;
+}
+
+.productDetail {
+  align-items: center;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+
+.productDetail h2 {
+  margin: 20px auto 10px auto;
+}
+
+.productDetail p {
+  margin: 0;
+  text-align: left;
+}
+
+.productDetail img {
+  align-items: center;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+}
+
+.productAside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.productAside li {
+  background: #eee;
+  font-weight: 700;
+  padding: 0.3em 0.6em;
+  border-radius: 1em;
+}
+
+.productAside button {
+  background: #008D33 url(http://i.imgur.com/RWKrr8S.png);
+  background-repeat: no-repeat;
+  background-position: 2em 50%;
+  background-size: 2em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 1.5em 3em;
+  padding-left: 6em;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+.productAside button:hover {
+  background-color: #33C066;
+  background-size: 3em;
+  background-position: 1.5em 50%;
+}
+
+
+/* This rule ist just because of the responsive images */
+@media (max-width: 1600px) {
+
+  .productAside {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .productAside img{
+    width: 250px;
+  }
+
+  .productAside ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
