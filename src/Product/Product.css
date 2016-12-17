@@ -19,7 +19,7 @@
   margin: 20px auto 10px auto;
 }
 
-.productDetail p {
+.productDetail .msg {
   margin: 0;
   text-align: left;
 }
